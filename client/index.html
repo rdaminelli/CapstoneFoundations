@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Flashcards</h1>
+            <div>
+                <button onclick="showCreateCardBox()">New Card</button>
+                <button onclick="delFlashcards()">Del Cards</button>
+                <button onclick="getFlashcards()">Display Cards</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="create-box">
+            <h2 style="text-align: center; color: black;">Create Flashcards</h2>
+            <label for="question">question</label>
+            <textarea id="question"></textarea>
+            <br>
+            <label for="answer">answer</label>
+            <textarea id="answer"></textarea>
+            <div>
+                <button onclick="addFlashcard(event)">Save</button>
+                <button onclick="hideCreateBox()">Close</button>
+            </div>
+        </div>
+        <div class="flashcards"></div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

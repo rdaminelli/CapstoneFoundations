@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "question": "HTML",
+        "answer": "Create the structure"
+    },
+    {
+        "id": 2,
+        "question": "CSS",
+        "answer": "Stylize the website"
+    },
+    {
+        "id": 3,
+        "question": "JS",
+        "answer": "Increase interactivity"
+    }
+]
